@@ -1,8 +1,10 @@
 // ==UserScript==
-// @name KissManga Plus
-// @namespace christianbelouve
-// @description Add keyboard shortcut for KissManga
+// @name KissManga PlusPlus
+// @namespace gerads
+// @description Add keyboard shortcuts for KissManga
 // @include http://kissmanga.com/*
+// @grant none
+// @icon https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/icon.png
 // ==/UserScript== 
 
 function doc_keyUp(e) {
