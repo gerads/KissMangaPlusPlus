@@ -5,6 +5,9 @@
 // @include http://kissmanga.com/*
 // @grant none
 // @icon https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/icon.png
+// @updateURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplus.user.js
+// @downloadURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplus.user.js
+// @version 1.2
 // ==/UserScript== 
 
 function doc_keyUp(e) {
