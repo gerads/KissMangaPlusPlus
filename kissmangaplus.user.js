@@ -6,14 +6,15 @@
 // ==/UserScript== 
 
 function doc_keyUp(e) {
-    switch (e.keyCode) {
-        case 75:
-            //k - Previous chapter
+    if (!e.ctrlKey && !e.shiftKey && !e.altKey && !e.metaKey) {
+        switch (e.keyCode) {
+        case 74:
+            //j - Previous chapter
             var prev = document.getElementsByClassName('btnPrevious');
 			window.location.href = prev[0].parentNode.href;
             break;
-        case 74:
-        	//j - Next chapter
+        case 75:
+        	//k - Next chapter
            	var next = document.getElementsByClassName('btnNext');
 			window.location.href = next[0].parentNode.href;
             break;
@@ -37,19 +38,9 @@ function doc_keyUp(e) {
 
             break;
         case 83:
-        	//s - search by series name
-        	var searchText = prompt("Enter text to search (by Series Name)", "");
+        	//s - search by manga
+        	var searchText = prompt("Enter text to search", "");
         	document.getElementById('keyword').value = searchText;
-			document.getElementById('selectSearch').value = "Manga";
-        	var search = document.getElementById('imgSearch');
-        	search.click();
-        	break;
-			
-		case 65:
-        	//s - search by author/artist
-        	var searchText = prompt("Enter text to search (by Author/Artist)", "");
-        	document.getElementById('keyword').value = searchText;
-			document.getElementById('selectSearch').value = "AuthorArtist";
         	var search = document.getElementById('imgSearch');
         	search.click();
         	break;
@@ -66,6 +57,7 @@ function doc_keyUp(e) {
 
         default:
             break;
+       }
     }
 }
 document.addEventListener('keyup', doc_keyUp, false);
