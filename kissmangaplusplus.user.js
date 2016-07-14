@@ -5,10 +5,10 @@
 // @include http://kissmanga.com/*
 // @grant none
 // @icon https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/icon.png
-// @updateURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplus.user.js
-// @downloadURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplus.user.js
+// @updateURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplusplus.user.js
+// @downloadURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplusplus.user.js
 // @version 1.3
-// ==/UserScript== 
+// ==/UserScript==
 
 function doc_keyUp(e) {
     if (document.activeElement.nodeName != 'INPUT') {
