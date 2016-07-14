@@ -7,7 +7,6 @@
 // @icon https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/icon.png
 // @updateURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplus.user.js
 // @downloadURL https://raw.githubusercontent.com/gerads/KissMangaPlusPlus/master/kissmangaplus.user.js
-// @require http://code.jquery.com/jquery-3.1.0.min.js
 // @version 1.3
 // ==/UserScript== 
 
